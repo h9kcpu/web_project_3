@@ -1,0 +1,18 @@
+.photo-grid{
+
+}
+
+.photo-grid__list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 16px;
+}
+
+.photo-grid__list-item{
+
+}
+
+.photo-grid__item{
+
+}
