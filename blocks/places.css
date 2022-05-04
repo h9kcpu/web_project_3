@@ -1,0 +1,31 @@
+.places {
+
+}
+
+.places__item{
+    display: grid;
+    grid-template-areas:
+        "title artist" 
+        "image description"
+        "button";  
+}
+
+.places__title {
+    grid-area: "title";   
+}
+
+.places__artist {
+    grid-area: "artist";
+}
+
+.places__image {
+    grid-area: "image";
+}
+
+.places__description {
+    grid-area: "description";
+}   
+
+.places__button {
+    grid-area: "button";
+}
