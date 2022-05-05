@@ -4,28 +4,126 @@
 
 .places__item{
     display: grid;
+    grid-template-rows: auto auto 1fr;
     grid-template-areas:
-        "title artist" 
+        "title artist-role" 
+        "title artist"
         "image description"
-        "button";  
+        "button description";  
+    margin: 92px 148px 92px 148px;
+}
+
+@media screen and (max-width: 1279) {
+    .places__item{
+        display: grid;
+        grid-template-areas:
+            "title artist-role"
+            "title-artist"
+            "image description" 
+            "button description";  
+    }
+}
+
+@media screen and (max-width: 767) {
+    .places__item{
+        display: grid;
+        grid-template-areas:
+            "title"
+            "artist-role"
+            "artist" 
+            "image"
+            "description"
+            "description"
+            "button";  
+    }
 }
 
 .places__title {
-    grid-area: "title";   
+    grid-area: title;
+    max-width: 460px;
+    max-height: 152px;
+    /*margin-top: 92px;*/
+    margin-top: 0;
+    margin-right: 40px;
+    margin-bottom: 48px;
+    margin-left: ;
+    /*margin-left: 148px;*/
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    color: #fff;
+}
+
+.places__artist-role{
+    grid-area: artist-role;
+    margin-top: 107px;
+    /*margin-top: 200px;*/
+    margin-right: 0;
+    /*margin-bottom: 8px;*/
+    margin-left: 0;
 }
 
 .places__artist {
-    grid-area: "artist";
+    grid-area: artist;
+    max-width: 456px;
+    height: 22px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
 }
 
 .places__image {
-    grid-area: "image";
+    grid-area: image;
+    max-width: 460px;
+    height: 460px;
+    margin-top: 0;
+    margin-right: 40px;
+    margin-bottom: 0;
+    /* margin-left: 148px; */
 }
 
 .places__description {
-    grid-area: "description";
+    grid-area: description;
+    /*margin-top: 48px;*/
 }   
 
 .places__button {
-    grid-area: "button";
+    grid-area: button;
+    border-radius: 4px;
+    opacity: 100%;
+    width: 248px;
+    height: 48px;
+    margin-top: 60px;
+    margin-right: 0;
+    margin-bottom: 80px;
+    /*margin-left: 168px;*/
+    background: #0278fe;
+    color: #fff;
+}
+
+.places__paragraph{
+    /* margin: 0 0 12px 0; */
+    max-width: 484px;
+    /*margin-top: 48px;*/
+    /*margin-right: 148px;
+    margin-bottom: 25px;*/
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 29px;
+    color: #fff;
+}
+
+.places__paragraph:last-of-type{
+    margin: 0;
 }

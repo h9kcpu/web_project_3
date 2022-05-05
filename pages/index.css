@@ -1,5 +1,5 @@
-@import url(../normalize.css);
-@import url(../fonts/inter.css);
+@import url(../vendor/normalize.css);
+@import url(../vendor/inter.css);
 @import url(../blocks/page.css);
 @import url(../blocks/photo-grid.css);
 @import url(../blocks/places.css);
